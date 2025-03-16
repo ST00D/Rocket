@@ -33,12 +33,11 @@ unsigned long lastBuzzTime = 0;
 const unsigned long buzzInterval = 2000;  // 2 seconds
 
 void setup() {
-  // Serial Monitor for debugging
   Serial.begin(115200);
   setupGPS();
   setupAccelerometer();
   
-  pinMode(BUZZER_PIN, OUTPUT);  // Set buzzer pin as output
+  pinMode(BUZZER_PIN, OUTPUT);  
 }
 
 void loop() {
@@ -125,6 +124,7 @@ void sendData() {
 }
 
 // Buzzer Function - Buzz for 2000s
+//REMOVE COMMENT BEFORE FLIGHT
 void buzzBuzzer() {
   //tone(buzz, 329);
   //digitalWrite(BUZZER_PIN, HIGH);  // Turn buzzer ON
