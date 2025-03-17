@@ -7,7 +7,8 @@
 
 #define SDA A4
 #define SCL A5
-#define BUZZER_PIN 3  // Define the buzzer pin
+#define BUZZER_PIN 3  
+
 
 SoftwareWire myWire(SDA, SCL);
 const int buzz =3;
