@@ -10,6 +10,7 @@ Current libraries:
 
 Raspberry PI:
 
+*must run python<3.4*
 Library for serial com with arduino-
 pip3 install pyserial 
 
