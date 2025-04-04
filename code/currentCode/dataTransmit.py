@@ -19,7 +19,8 @@ except Exception as e:
 # Function to speak the text using espeak-ng
 def speak(text):
     # Use --stdout piped to aplay to ensure proper audio output
-    command = 'espeak-ng "{}" --stdout | aplay'.format(text)
+    # increased tts volume and slowed yappin
+    command = 'espeak-ng -a 200 -s 140 "{}" --stdout | aplay'.format(text)
     os.system(command)
 
 # Function to get the latest data from the serial port
